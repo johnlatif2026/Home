@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>تسجيل الزائر</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      direction: rtl;
+      text-align: center;
+      padding: 40px;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input[type="text"], input[type="number"], input[type="tel"], input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>أدخل بياناتك لتسجيل الزيارة</h2>
+
+<form action="https://getform.io/f/ajjomzga" method="POST" enctype="multipart/form-data">
+
+  <label>اسمك:</label>
+  <input type="text" name="name" required>
+
+  <label>رقم الهاتف:</label>
+  <input type="tel" name="phone" required>
+
+  <label>ارفع صورة إثبات الهوية:</label>
+  <input type="file" name="id_image" accept="image/*" required>
+
+  <button type="submit">إرسال</button>
+</form>
+
+
+</body>
+</html>
